@@ -33,6 +33,7 @@ const Home = () => {
       setRetry(0);
     }
     const finalInput = input.replace(/Mark/i, "aniftymark");
+    // console.log(finalInput);
     // Add the fetch request
     const response = await fetch("/api/generate", {
       method: "POST",
@@ -110,14 +111,18 @@ const Home = () => {
               input!
             </h2>
             <h3>
-              Example: Portrait of Mark as Thor, highly detailed digital
-              painting, artstation, concept art, smooth, sharp focus,
-              illustration, art by Shonen Jump
+              Example: Portrait of Mark as a robot, original face, transparent
+              neck, porcelain face and head, robotic parts, cyberpunk, cable
+              electric wires, hyperrealistic, fantasy, octane render, intricate,
+              concept art, 8k, professional studio lighting
             </h3>
           </div>
           {/* Add prompt container here */}
           <div className="prompt-container">
             <input className="prompt-box" value={input} onChange={onChange} />
+            <h3>
+              Creating the image can take some time, feel free to keep browsing
+            </h3>
             <div className="prompt-buttons"></div>
             {/* Tweak classNames to change classes */}
             <a
