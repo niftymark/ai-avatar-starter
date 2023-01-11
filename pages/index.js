@@ -110,7 +110,7 @@ const Home = () => {
               input!
             </h2>
             <h3>
-              Example:Portrait of Mark in Pokemon, highly detailed digital
+              Example: Portrait of Mark as Thor, highly detailed digital
               painting, artstation, concept art, smooth, sharp focus,
               illustration, art by Shonen Jump
             </h3>
